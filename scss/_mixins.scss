@@ -1,0 +1,67 @@
+@mixin font($fz, $c, $fw: inherit, $ff: inherit, $lh: inherit, $fs: inherit) {
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    font-style: $fs;
+    font-size: $fz;
+    color: $c;
+}
+
+@mixin tr {
+    transition: all .4s ease-in;
+}
+
+@mixin hover {
+    @include tr();
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+
+@mixin pCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin btn-big {
+     @include font(2rem, #fff, 300, $text-ff, 1.3);
+     text-transform: uppercase;
+     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .5);
+     outline: none;
+     padding: 1.5rem;
+     width: 20rem;
+     text-align: center;
+     border: $b-size solid transparent;
+}
+
+@mixin title-dark {
+    @include font(9rem, $text-color, 700, $text-ff, 1.5);
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+@mixin title-light {
+    @include font(9rem, $title-color, 700, $text-ff, 1.5);
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+@mixin p-light {
+    @include font(1.7rem, $title-color, 300, $text-ff, 1.5);
+    max-width: 60rem;
+    max-height: 12.8rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+@mixin p-dark {
+    @include font(1.7rem, $text-color, 300, $text-ff, 1.5);
+    max-width: 60rem;
+    max-height: 12.8rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
