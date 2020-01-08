@@ -34,6 +34,7 @@ a, button {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
     &__flex {
         display: flex;
     }
@@ -86,11 +87,13 @@ header {
  }
  
  .menu__btn {
+     display: -ms-flexbox;
      display: flex;
+     -ms-flex-item-align: center;
      align-items: center;
-    justify-content: center;
+     justify-content: center;
      position: fixed;
-     background: linear-gradient(-145deg, #ff6033 , #b68578);
+    background: linear-gradient(-145deg, #ff6033 , #b68578);
      top: 4.3rem;
      right: 2rem;
      width: 3.5rem;
@@ -124,7 +127,7 @@ header {
      &__box {
          display: block;
          position: fixed;
-         visibility: hidden;
+         display: none;
          z-index: 10;
          top: 0;
          right: 0;
@@ -170,7 +173,7 @@ header {
  }
  
  #menu__toggle:checked ~ .menu-burger__box {
-     visibility: visible;
+   display: block;
      right: 0;
  }
  
@@ -180,7 +183,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #efe8e7;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .start-screen__content {
@@ -214,9 +217,9 @@ header {
 }
 
 .scroll {
-    position: absolute;
+    position: absolute;;
     left: 49%;
-    top: 90vh;
+    margin-top: 90vh;
     width: 24px;
     height: 40px;
     z-index: 13;
@@ -306,8 +309,10 @@ header {
     background-position: right;
     background-size: auto;
     background-repeat: no-repeat;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
+    -ms-flex-item-align: center;
     align-items: center;
 }
 
@@ -322,8 +327,10 @@ header {
         box-shadow: 0 0 8px 1px rgba(0, 0, 0, .5);
     }
     &__link {
+        display: -ms-flexbox;
         display: flex;
         position: relative;
+        -ms-flex-item-align: center;
         align-items: center;
         text-align: center;
         @include font(2rem, $text-color, 700, $text-ff, 1.3);
@@ -509,6 +516,7 @@ header {
 
 
 .image {
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 100%;
@@ -533,6 +541,7 @@ header {
 
  .subscribe {
         &__form {
+        display: -ms-flexbox;
          display: flex;
          justify-content: space-between;
          input {
@@ -590,10 +599,12 @@ header {
 
 
 .section__blog .container {
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    -ms-flex-item-align: center;
     align-items: center;
     margin: 0 auto;
     text-align: center;
@@ -629,12 +640,12 @@ header {
 }
 
 .flex {
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     margin: 5rem 0;
+    -ms-flex-item-align: center;
     align-items: center;
-    -ms-flex-align: center;
-     max-width: 1200px;
+    max-width: 1200px;
     &__item {
         margin: 1.25%;
         width: 30.83%;
@@ -647,7 +658,9 @@ header {
      box-shadow: 0 0 8px 2px rgba(41, 40, 40, 0.5);    
      height: 30rem;
      &__link {
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-direction: column;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
@@ -725,9 +738,11 @@ header {
         background-size: cover;
         background-position: center;
         .container {
-         flex-direction: column;
-         align-items: center;
-         padding: 0 1.5rem;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-item-align: center;
+            align-items: center;
+            padding: 0 1.5rem;
         }
     }
 }
@@ -743,9 +758,11 @@ header {
         @include p-dark;
     }
     &__wrap {
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         justify-content: space-between;
+        -ms-flex-item-align: start;
         align-items: flex-start;
         margin: 5rem 1.5rem 12rem;
         &__form {
@@ -772,7 +789,9 @@ header {
 
 
 .myform {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: left;
     &__input {
@@ -847,8 +866,10 @@ header {
      height: 100px;
      .container {
         height: 100%;
+        display: -ms-flexbox;
         display: flex;
         justify-content: space-between;
+        -ms-flex-item-align: center;
         align-items: center;
    }
  }
@@ -884,10 +905,6 @@ header {
         max-width: 960px;
      }
       
-    .start-screen__title {
-           font-size: 6rem;
-    }
-
     .start-screen__content {
         width: 60%;
     }
@@ -909,6 +926,7 @@ header {
     }
 
     .section__services .container {
+        -ms-flex-direction: column;
         flex-direction: column;
         background-position: bottom;
         background-size: cover;
@@ -919,6 +937,10 @@ header {
         order: 1;
         margin: 0;
         margin-top: 10rem;
+    }
+
+    .scroll {
+        display: none;
     }
 
     .list {
@@ -1004,6 +1026,9 @@ header {
         width: 100%;
         margin: 10rem 2rem 0;
     }
+    .scroll {
+        display: none;
+    }
     .list {
         order: 2;
         width: 100%;
@@ -1045,6 +1070,7 @@ header {
         }
     }
     .image {
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     height: 100%;
@@ -1078,6 +1104,7 @@ header {
      }
      .flex {
          max-width: 100%;
+         -ms-flex-direction: column;
          flex-direction: column;
          &__item {
              width: 60%;
@@ -1103,7 +1130,9 @@ header {
       }
     }
     .contact__wrap {
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-item-align: center;
         align-items: center;
         margin: 2rem 1.5rem 8rem;
         &__form {
@@ -1114,11 +1143,13 @@ header {
             width: 70%;
         }
     }.footer .container {
+        -ms-flex-direction: column;
        flex-direction: column-reverse;
        margin: 0 1.5rem;
     }
     .text--pacifico {
         order: 1;
+        -ms-flex-order: 1;
     }
                  
 }
