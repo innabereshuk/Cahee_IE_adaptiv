@@ -53,7 +53,7 @@
 @mixin p-light {
     @include font(1.7rem, $title-color, 300, $text-ff, 1.5);
     max-width: 60rem;
-    max-height: 12.8rem;
+    max-height: 12rem;
     word-wrap: break-word;
     overflow: hidden;
 }
@@ -61,7 +61,7 @@
 @mixin p-dark {
     @include font(1.7rem, $text-color, 300, $text-ff, 1.5);
     max-width: 60rem;
-    max-height: 12.8rem;
+    max-height: 12rem;
     word-wrap: break-word;
     overflow: hidden;
 }

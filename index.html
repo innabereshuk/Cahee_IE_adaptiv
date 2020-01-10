@@ -15,7 +15,7 @@
                event.preventDefault();
                var id  = $(this).attr('href'),
                    top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
+               $('body,html').animate({scrollTop: top}, 2000);
            });
        });
 
@@ -24,18 +24,10 @@
                event.preventDefault();
                var id  = $(this).attr('href'),
                    top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
+               $('body,html').animate({scrollTop: top},2000);
            });
        });
-
-       $(document).ready(function(){
-           $("#menu-burger").on("click","a", function (event) {
-               event.preventDefault();
-               var id  = $(this).attr('href'),
-                   top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
-           });
-       });
+  
        </script>
        <script src="modernizr.js"></script>
        <script src="modernizr.min.js"></script>
@@ -43,10 +35,15 @@
 <body>
     <header>
         <div class="container">
-            <div class="nav">
+            <nav class="nav">
                 <div class="nav__logo">
                     <span>Cachee</span>
                 </div>
+                                  
+                <button class="menu-burger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                               
                 <ul class="nav__menu" id="nav__menu">
                     <li class="nav__menu__item">
                         <a href="#home" class="nav__menu__link">Home</a>
@@ -67,34 +64,7 @@
                         <a href="#contact" class="nav__menu__link">Contact</a>
                     </li>
                 </ul>
-                <div class="menu-burger" id="menu-burger">
-                     <input id="menu__toggle" type="checkbox">
-                     <label class="menu__btn" for="menu__toggle">
-                         <span></span>
-                    </label>
-                    
-                     <ul class="menu-burger__box">
-                        <li>
-                            <a href="#home" class="menu-burger__box__item">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="menu-burger__box__item">About</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="menu-burger__box__item">Services</a>
-                        </li>
-                        <li>
-                            <a href="#gallery" class="menu-burger__box__item">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="menu-burger__box__item">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="menu-burger__box__item">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -381,41 +351,41 @@
             </div>
          </section>
 
-         <section class="section gallery" id="gallery">
-       <div class="container">
-            <h1 class="gallery__title">Gallery</h1>
-            <p class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="images">
-                <div class="images__item images__item--2w images__item--4h">
-                    <div class="image image--lg">
-                        <img src="cahee.img/img1.1.jpg" alt="Peach" class="image__pic">
+        <section class="section gallery" id="gallery">
+             <div class="container">
+                 <h1 class="gallery__title">Gallery</h1>
+                 <p class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                 <div class="images">
+                    <div class="images__item images__item--2w images__item--4h">
+                         <div class="image">
+                             <img src="cahee.img/img1.1.jpg" alt="Peach" class="image__pic">
+                         </div>
+                      </div>
+                     <div class="images__item images__item--1w images__item--2h">
+                         <div class="image">
+                            <img src="cahee.img/img4.4.jpg" alt="Blueberry" class="image__pic">
+                        </div>
                     </div>
-                </div>
-                <div class="images__item images__item--1w images__item--2h">
-                    <div class="image image__smoll">
-                        <img src="cahee.img/img4.4.jpg" alt="Blueberry" class="image__pic">
-                    </div>
-                </div>
-                <div class="images__item images__item--1w images__item--2h images__item--2h-2h">
-                     <div class="image image__smoll">
-                        <img src="cahee.img/img5.5.jpg" alt="Blackberry" class="image__pic">
-                    </div>
-                </div>
+                    <div class="images__item images__item--1w images__item--2h images__item--2h-2h">
+                         <div class="image">
+                            <img src="cahee.img/img5.5.jpg" alt="Blackberry" class="image__pic">
+                        </div>
+                     </div>
              
-                 <div class="images__item images__item--3w images__item--3h">
-                    <div class="image image--tiny">
-                        <img src="cahee.img/img2.2.jpg" alt="Plate" class="image__pic">
+                    <div class="images__item images__item--3w images__item--3h">
+                         <div class="image">
+                             <img src="cahee.img/img2.2.jpg" alt="Plate" class="image__pic">
+                        </div>
+                     </div>
+                    <div class="images__item images__item--3w images__item--last images__item--3h">
+                        <div class="image">
+                             <img src="cahee.img/img3.3.jpg" alt="Persimmon" class="image__pic">
+                         </div>
                     </div>
                 </div>
-                <div class="images__item images__item--3w images__item--last images__item--3h">
-                    <div class="image image--tiny">
-                        <img src="cahee.img/img3.3.jpg" alt="Persimmon" class="image__pic">
-                    </div>
-                </div>
+                <button type="button" class="gallery__btn">VIEW MORE</button>
             </div>
-            <a href="#" class="gallery__btn">VIEW MORE</a>
-       </div >
-         </section> 
+        </section> 
     
          <section class="section section__subscribe" style="background-image: url(cahee.img/bg.png);">
         <div class="container">
@@ -431,7 +401,7 @@
          </section>
 
          <section class="section section__blog" id="blog">
-        <div class="container">
+             <div class="container">
             <h1 class="section__blog__title">Blog</h1>
             <p class="section__blog__subtitle">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             <div class="flex">
@@ -472,8 +442,7 @@
                     </article>
                </div>
             </div>
-            
-            <a href="#" class="section__blog__btn">VIEW MORE</a>
+            <button type="button" class="section__blog__btn">VIEW MORE</button>
         </div>
          </section>
 
@@ -512,7 +481,7 @@
        </div>
     </footer>
 
-    
+       
     
         <script src="jquery.js"></script>
         <script src="jquery.maskedinput.min.js"></script>
