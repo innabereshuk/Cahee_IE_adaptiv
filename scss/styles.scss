@@ -41,10 +41,10 @@ a, button {
     }
 }
 
-section {
+// section {
    
-    width: 100vw;
-}
+//     width: 100vw;
+// }
 
 //  Header 
 
@@ -109,7 +109,7 @@ header {
   }
 
 .start-screen__content {
-    width: 35%;
+    width: 45%;
     margin: 36rem 1.5rem 15rem;
     text-align: left;
 }
@@ -656,7 +656,6 @@ header {
 
 .section {
     &__contact {
-        min-height: max-content;
         background: lightpink;
         background-repeat: no-repeat;
         background-size: cover;
@@ -666,7 +665,8 @@ header {
             flex-direction: column;
             -ms-flex-item-align: center;
             align-items: center;
-            padding: 0 1.5rem;
+            text-align: center;
+             padding: 0 1.5rem;
         }
     }
 }
@@ -674,7 +674,7 @@ header {
 .contact {
     &__title {
         @include title-dark;
-        margin: 0 0;
+        margin: 0;
         padding-top: 10rem;
         padding-bottom: 4rem;
     }
@@ -788,19 +788,19 @@ header {
 .footer {
      background: #262626;
      color: white;
-     height: 100px;
-     .container {
-        height: 100%;
-        display: -ms-flexbox;
+    .container {
+         display: -ms-flexbox;
         display: flex;
         justify-content: space-between;
         -ms-flex-item-align: center;
         align-items: center;
+        padding: 5rem 0;
    }
 }
 
 .text {
     display: inline-block;
+    margin-bottom: 1rem;
     &--smoll {
         @include font(1.5rem, $title-color, 300, $text-ff, 1.5);
     }
@@ -1728,7 +1728,7 @@ header {
             padding: 1rem 2rem;
             margin-left: 1rem;
             font-size: 2rem;
-            width: 18rem;
+            width: 15rem;
         }
 
      }
@@ -1740,11 +1740,15 @@ header {
         -ms-flex-direction: column;
         flex-direction: column-reverse;
         margin: 0 1.5rem;
+        padding: 3rem 0;
     }
-    .text--pacifico {
+    .text {
+        padding-bottom: 1rem;
+        &--pacifico {
         order: 1;
         -ms-flex-order: 1;
     }
+}
                  
 }
 
@@ -1759,7 +1763,6 @@ header {
         line-height: 1.3;
         line-break: normal;
         hyphens: auto;
-        text-align: left;
     }
 
     .container h1 {
@@ -1915,26 +1918,15 @@ header {
     .contact__wrap__adress p {
         text-align: center;
     }
-
-    .footer {
-        .container {
-           display: -ms-flexbox;
-           display: flex;
-           justify-content: space-around;
-           -ms-flex-item-align: center;
-           align-items: center;
-      }
-   }
+  
 
    .text {
     display: inline-block;
     &--smoll {
         @include font(1.4rem, $title-color, 300, $text-ff, 1.5);
-        margin-bottom: 2rem;
-    }
+     }
     &--pacifico {
-        @include font(2rem, $title-color, 400, $text-logo, 1.5);
-        margin-top: 1rem;
+        @include font(1.8rem, $title-color, 400, $text-logo, 1.5);
     }
     &--light {
         @include font(1.4rem, $title-color, 300, $text-ff, 1.5);
