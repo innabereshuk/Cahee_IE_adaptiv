@@ -1100,7 +1100,8 @@ header {
   max-width: 60rem;
   max-height: 12rem;
   word-wrap: break-word;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 1.5rem; }
 
 .contact__wrap {
   display: -ms-flexbox;
@@ -1344,7 +1345,7 @@ textarea {
       width: 55%;
       margin: 5rem 0; }
   .subscribe__button {
-    width: 25%; }
+    width: 18rem; }
   .post {
     height: 100%; }
     .post__data {
@@ -1948,76 +1949,6 @@ textarea {
     font-size: 1.3rem;
     color: white;
     line-height: 2.2rem; }
-  .nav__menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    margin: 0;
-    padding: 10rem 0;
-    list-style: none;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.3);
-    -webkit-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
-    -o-transform: translate(0, -100%);
-    transform: translate(0, -100%);
-    -webkit-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-    opacity: 0;
-    z-index: 10; }
-    .nav__menu__link {
-      display: block;
-      width: -webkit-max-content;
-      width: -moz-max-content;
-      width: max-content;
-      padding: 1rem 0;
-      margin: 0 auto;
-      color: #fff;
-      text-transform: uppercase;
-      border-bottom: 2px solid transparent;
-      font-size: 2rem;
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      -webkit-transition: all .25s ease-in;
-      -o-transition: all .25s ease-in;
-      transition: all .25s ease-in; }
-      .nav__menu__link:hover, .nav__menu__link:focus, .nav__menu__link:active {
-        border-bottom: 2px solid #ff6033;
-        border-top: 0;
-        background: rgba(0, 0, 0, 0.2);
-        border-top: none;
-        color: #ff6033;
-        -webkit-transition: all .4s ease-in;
-        -o-transition: all .4s ease-in;
-        transition: all .4s ease-in; }
-    .nav__menu__item {
-      display: block;
-      margin: 0; }
-  .menu-burger:focus {
-    opacity: 0; }
-  .menu-burger:focus + .nav__menu,
-  .menu-opened .nav__menu {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
-  .menu-burger:focus + .nav__menu::after {
-    content: "×";
-    color: white;
-    font-size: 5rem;
-    position: absolute;
-    top: 3rem;
-    right: 4rem; }
   .scroll {
     display: none; }
   .wrap {
@@ -2122,48 +2053,9 @@ textarea {
     padding: 1rem 2rem;
     margin-left: 1rem;
     font-size: 2rem;
-    width: 40%; }
+    width: 18rem; }
   .section__blog__subtitle, .section__blog__title {
     padding: 0 1.5rem; }
-  .flex {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    max-width: 100%;
-    -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    padding: 0 1.5rem; }
-    .flex__item {
-      width: 90%;
-      height: auto;
-      overflow: hidden; }
-  .section__blog__title {
-    margin: 5rem 3rem; }
-  .section__blog__btn {
-    padding: 1.2rem;
-    width: 20rem;
-    max-width: 20rem;
-    margin: 0 0 7rem; }
-  .contact__wrap {
-    -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -ms-flex-item-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 2rem 1.5rem 8rem; }
-    .contact__wrap__form {
-      width: 70%;
-      margin: 5rem 0 10rem; }
-    .contact__wrap__adress {
-      width: 70%;
-      text-align: center; }
-  .contact__title {
-    padding: 5rem 2rem 2rem; }
   .footer .container {
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
@@ -2306,19 +2198,18 @@ textarea {
     width: 100%;
     height: auto;
     overflow: hidden; }
-  .footer {
-    background: #262626;
-    color: white; }
-    .footer .container {
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -ms-flex-item-align: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
+  .contact__wrap__adress p {
+    text-align: center; }
+  .footer .container {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-item-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .text {
     display: inline-block; }
     .text--smoll {
