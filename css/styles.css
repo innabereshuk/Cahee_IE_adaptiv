@@ -1213,7 +1213,7 @@ textarea[placeholder]::placeholder {
 
 textarea {
   resize: none;
-  padding: rem;
+  padding: 1.5rem;
   background: rgba(0, 196, 196, 0.6);
   border: 2px solid transparent;
   margin-bottom: 1.5rem;
