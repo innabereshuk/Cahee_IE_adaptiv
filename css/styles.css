@@ -762,8 +762,7 @@ header {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 2.5%;
-    margin: 5rem 1.5rem;
-    height: 97rem; }
+    margin: 5rem 1.5rem; }
     .images__item {
       grid-row: span 2; }
       .images__item--2w {
@@ -796,8 +795,7 @@ header {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 100%;
-    height: auto; }
+    min-height: 100%; }
 
 .section__subscribe {
   background-size: cover;
@@ -1003,15 +1001,14 @@ header {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 100%;
-    height: auto; }
+    min-height: 100%; }
   .post__data {
     display: inline-block;
     text-align: center;
     width: 6.5rem;
     height: 6.5rem;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 1;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -1022,7 +1019,7 @@ header {
     margin: 3rem;
     border-radius: .7rem; }
   .post__text {
-    z-index: 2;
+    z-index: 1;
     text-align: left;
     margin: 2rem 1.5rem; }
     .post__text--title {
@@ -1053,7 +1050,7 @@ header {
   transition: all .4s ease-in; }
 
 .post__link:hover .post__text, .post__data {
-  z-index: 4; }
+  z-index: 3; }
 
 .section__contact {
   background: lightpink;
@@ -1293,10 +1290,12 @@ textarea {
   .start-screen__subtitle {
     width: 65%;
     margin: 10rem 0 10rem; }
-  .nav__menu {
-    margin: auto 0; }
-    .nav__menu__item {
-      margin-left: 2rem; }
+  .nav {
+    z-index: 20; }
+    .nav__menu {
+      margin: auto 0; }
+      .nav__menu__item {
+        margin-left: 2rem; }
   .wrap__content {
     display: inline-block;
     margin-left: 2%;
@@ -1351,7 +1350,7 @@ textarea {
       width: 70%;
       margin: 5rem 0; }
   .post {
-    height: 100%; }
+    width: 100%; }
     .post__data {
       height: 5rem;
       width: 5rem;
@@ -1552,7 +1551,7 @@ textarea {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(12, 1fr);
       gap: 2.5%;
-      margin: 4.5rem 1.5rem; }
+      margin: 5rem 1.5rem; }
       .images__item {
         grid-row: span 2; }
         .images__item--2w {
@@ -1709,7 +1708,7 @@ textarea {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(8, 1fr);
       gap: 2.5%;
-      margin: 4.5rem 1.5rem; }
+      margin: 5rem 1.5rem; }
       .images__item {
         grid-row: span 1; }
         .images__item--2w {
@@ -1851,7 +1850,7 @@ textarea {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(10, 1fr);
       gap: 2.5%;
-      margin: 4.5rem 1.5rem; }
+      margin: 5rem 1.5rem; }
       .images__item {
         grid-row: span 1; }
         .images__item--2w {
@@ -1868,7 +1867,7 @@ textarea {
           grid-row: span 2; } }
   .images {
     width: 90%;
-    margin: 4.5rem auto; }
+    margin: 5rem auto; }
   .subscribe__content {
     width: 100%;
     padding: 0 1.5rem; }

@@ -9,28 +9,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
     </script>
-    <script>
-        $(document).ready(function(){
-           $("#nav__menu").on("click","a", function (event) {
-               event.preventDefault();
-               var id  = $(this).attr('href'),
-                   top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 2000);
-           });
-       });
-
-       $(document).ready(function(){
-           $("#home").on("click","a", function (event) {
-               event.preventDefault();
-               var id  = $(this).attr('href'),
-                   top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top},2000);
-           });
-       });
-  
-       </script>
-       <script src="modernizr.js"></script>
-       <script src="modernizr.min.js"></script>
+    <script src="modernizr.js"></script>
+    <script src="modernizr.min.js"></script>
 </head>
 <body>
     <header>
@@ -500,6 +480,24 @@
             completed: function(){ alert("Вы ввели номер: " + this.val()); }
             });
          });
+
+         $(document).ready(function(){
+           $("#nav__menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 2000);
+           });
+         });
+
+        $(document).ready(function(){
+           $("#home").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top},2000);
+           });
+        });
         </script>
 
           

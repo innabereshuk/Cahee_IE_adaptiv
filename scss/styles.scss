@@ -411,7 +411,7 @@ header {
         grid-template-rows: repeat(7, 1fr);
         gap: 2.5%;
         margin: 5rem 1.5rem;
-        height: 97rem;
+        // height: 97rem;
         &__item {
             grid-row: span 2;
            &--2w {
@@ -448,7 +448,6 @@ header {
          @include pCenter;
          min-width: 100%;
          min-height: 100%;
-         height: auto;
     }
 }
 // Subscribe
@@ -605,7 +604,6 @@ header {
         @include pCenter;
         min-width: 100%;
         min-height: 100%;
-        height: auto;
     }
     &__data {
         display: inline-block;
@@ -613,14 +611,14 @@ header {
         width: 6.5rem;
         height: 6.5rem;
         background: rgba(0, 0, 0, .5);
-        z-index: 2;
+        z-index: 1;
         text-transform: uppercase;
         @include font(2.5rem, $title-color, 700, $text-ff, 1.2);
         margin: 3rem;
         border-radius: .7rem;
     }
     &__text {
-        z-index: 2;
+        z-index: 1;
         text-align: left;
         margin: 2rem 1.5rem;
         &--title {
@@ -641,7 +639,7 @@ header {
  }
 
 .post__link:hover .post__text, .post__data {
-    z-index: 4;
+    z-index: 3;
 }
 
 
@@ -848,7 +846,8 @@ header {
     }
 
     .nav {
-         &__menu {
+        z-index: 20;
+        &__menu {
             margin: auto 0;
             &__item {
                 margin-left: 2rem;
@@ -927,7 +926,7 @@ header {
     }
 
     .post {
-        height: 100%;
+        width: 100%;
         &__data {
             height: 5rem;
             width: 5rem;
@@ -1154,7 +1153,7 @@ header {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(12, 1fr);
             gap: 2.5%;
-            margin: 4.5rem 1.5rem;
+            margin: 5rem 1.5rem;
             &__item {
                 grid-row: span 2;
                &--2w {
@@ -1180,15 +1179,15 @@ header {
     }
 
     .image {
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    &__pic {
-         @include pCenter;
-         min-width: 100%;
-         min-height: 100%;
+         display: -ms-flexbox;
+         display: flex;
+         position: relative;
+         height: 100%;
+         overflow: hidden;
+         &__pic {
+             @include pCenter;
+             min-width: 100%;
+             min-height: 100%;
     }
     }
     .section__blog__subtitle, .section__blog__title {
@@ -1332,7 +1331,7 @@ header {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(8, 1fr);
             gap: 2.5%;
-            margin: 4.5rem 1.5rem;
+            margin: 5rem 1.5rem;
             &__item {
                 grid-row: span 1;
                &--2w {
@@ -1516,7 +1515,7 @@ header {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(10, 1fr);
             gap: 2.5%;
-            margin: 4.5rem 1.5rem;
+            margin: 5rem 1.5rem;
             &__item {
                 grid-row: span 1;
                &--2w {
@@ -1542,7 +1541,7 @@ header {
     }
    .images {
        width: 90%;
-        margin: 4.5rem auto;
+        margin: 5rem auto;
    }
  
      .subscribe {
