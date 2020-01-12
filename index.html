@@ -7,9 +7,9 @@
     <title>Cahee</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         $(document).ready(function(){
            $("#nav__menu").on("click","a", function (event) {
                event.preventDefault();
@@ -90,7 +90,7 @@
             <div class="container">
                 <div class="wrap">
                     <div class="wrap__img">
-                        <img class="wrap__pic" src="cahee.img/about.png">
+                        <img class="wrap__pic" src="cahee.img/about.png" alt="">
                     </div>
                     <div class="wrap__content">
                         <h1 class="wrap__content__title">About Us</h1>
@@ -392,7 +392,7 @@
             <div class="subscribe__content">
                 <h3 class="subscribe__content__title">Subscribe To Us</h3>
                 <p class="subscribe__content__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <form action="" class="subscribe__form"> 
+                <form action="#" class="subscribe__form"> 
                     <input type="email" name="email" minlength="2" maxlength="30" placeholder="Your email address...">
                     <button class="subscribe__button" type="submit">SUBSCRIBE</button>
                 </form>
@@ -409,7 +409,7 @@
                    <article class="post">
                         <a href="#" class="post__link">
                             <img class="post__pic" src="cahee.img/blog1.png" alt="">
-                            <time class="post__data">20 nov</time>
+                            <time class="post__data" datetime="2019-20-10">20 nov</time>
                             <div class="post__text">
                                 <span class="post__text--title">Green Smoothies: Too Much of a Good Thing?</span>
                                 <span class="post__text--subtitle">By Auskteez - 2 hours ago</span>
@@ -421,7 +421,7 @@
                     <article class="post">
                         <a href="#" class="post__link">
                             <img class="post__pic" src="cahee.img/blog2.png" alt="">
-                            <time class="post__data">14 nov</time>
+                            <time class="post__data" datetime="2019-20-10">14 nov</time>
                             <div class="post__text">
                                 <span class="post__text--title">Growing Food and a “Thirst” for Innovation</span>
                                 <span class="post__text--subtitle">By Auskteez - 3 hours ago</span>
@@ -433,7 +433,7 @@
                     <article class="post">
                         <a href="#" class="post__link">
                            <img class="post__pic" src="cahee.img/blog3.png" alt="">
-                            <time class="post__data">10 nov</time>
+                            <time class="post__data" datetime="2019-20-10">10 nov</time>
                            <div class="post__text">
                                 <span class="post__text--title">Pesticides & Food: What You Need to Know</span>
                                 <span class="post__text--subtitle">By Auskteez - 6 hours ago</span>
@@ -453,10 +453,10 @@
                     you'd like to discuss, contact with me!</p>
                <div class="contact__wrap">
                     <div class="contact__wrap__form">
-                         <form class="myform" id="myform" action="" method="POST">
+                         <form class="myform" id="myform" action="#" method="POST">
                             <input class="myform__input" type="text" name="name" minlength="2" maxlength="30" placeholder="Auskteez Tran" autofocus required>
                             <input class="myform__input" type="email" name="email" placeholder="Your email..." required>
-                            <input class="myform__input" mask="+0 (000) 000-00-00" type="tel" name="phone" id="phone" placeholder="Your phone number..." required>
+                            <input class="myform__input" type="tel" name="phone" id="phone" placeholder="Your phone number..." required>
                             <textarea name="comments" rows="10" cols="8" placeholder="Your message..."></textarea>
                             <button type="submit" value="Submit" class="myform__btn">Submit</button>
                          </form>
